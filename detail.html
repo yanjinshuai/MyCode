@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box">
+        <dl id="inn">
+            <!-- <dt><img src="./img/1.jpg" alt=""> </dt>
+            <dd>商品名称：气质名媛小香风三件套</dd>
+            <dd>价格：98</dd> -->
+        </dl>
+    </div>
+    <script>
+        var inn = document.querySelector('#inn');
+
+        function sliceString() {
+            var url = decodeURI(location.search.substring(1));
+            console.log(url)
+            return JSON.parse('{"' + url.replace(/=/g, '":"').replace(/&&/g, '","') + '"}')
+        }
+
+        inn.innerHTML = `<dt><img src="img/${sliceString().img}" alt=""> </dt>
+             <dd>商品名称：${sliceString().title}</dd>
+         <dd>价格：${sliceString().pic}</dd>`;
+    </script>
+</body>
+
+</html>

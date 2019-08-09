@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#box {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#head {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#head-top {
+    width: 100%;
+    height: 30px;
+}
+
+#logo {
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo a {
+    color: pink;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#con {
+    width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    display: none;
+}
+
+#con li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+#i {
+    width: 200px;
+    height: auto;
+    position: relative;
+}
+
+nav {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+#nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: hotpink;
+    z-index: 99;
+}
+
+#nav.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+#nav li a {
+    color: #fff;
+}
+
+#nav li a:hover {
+    color: #6d71f1;
+}
+
+#sli {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+#slideImg {
+    width: 800px;
+    height: 400px;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+
+#slideImg li {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#slideImg li.block {
+    display: block;
+}
+
+#slideImg>li>img {
+    width: 800px;
+    height: 400px;
+    cursor: pointer;
+}
+
+#slideName {
+    width: 200px;
+    height: 400px;
+    background: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    right: 200px;
+}
+
+#slideName li {
+    width: auto;
+    height: 30%;
+    line-height: 100px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#body {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#body dl {
+    margin: 10px 5px 0;
+    color: #000;
+}
+
+#body dl dt img {
+    width: 300px;
+    height: 300px;
+}
+
+#screen {
+    width: 1200px;
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+}
+
+#screen #priceScreen,
+#default {
+    cursor: pointer;
+}
+
+#screen .priceScreen {
+    color: orangered;
+}
+
+.spe {
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px auto;
+    font-size: 30px;
+    background: linear-gradient(to right, orangered, lime);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h1 {
+    width: 100%;
+    height: 100px;
+    font-size: 80px;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+    background-image: -webkit-linear-gradient(left, red, orangered, orange);
+}
+
+#inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#bottom {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.pic {
+    color: #fbb54d;
+}
+
+#slideName li.on {
+    color: lime;
+    font-weight: bold;
+}
+
+#bottom {
+    margin-top: 30px;
+    border-top: 1px solid #000;
+}
